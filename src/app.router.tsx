@@ -15,7 +15,7 @@ import {
   AdminRoute,
   NotAuthenticatedRoute,
 } from "./components/routes/ProtectedRoutes";
-import { createHashRouter } from "react-router";
+import { createHashRouter, Navigate } from "react-router";
 
 const AuthLayout = lazy(() => import("./auth/layouts/AuthLayout"));
 const AdminLayout = lazy(() => import("./admin/layouts/AdminLayout"));
